@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+  </head>
+  <body>
+    <img id="amongUsImage" src="8.png" alt="Among Us">
+  </body>
+  
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#amongUsImage {
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+}
+
+  </style>
+
+<script>
+    const amongUsImage = document.getElementById('amongUsImage');
+    amongUsImage.addEventListener('click', () => {
+      const audio = new Audio('sus.mp3');
+      audio.play();
+    });
+  </script>
+  
+</html>
